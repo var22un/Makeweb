@@ -1,0 +1,200 @@
+body{
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+
+
+#nam_e{
+  padding-top: 50px;
+  padding-left: 100px;
+}
+
+
+
+  
+
+
+
+div.varun:nth-child(odd){
+  background: linear-gradient(-229deg,
+  #f4da66, #efefef);
+}
+div.varun:nth-child(even){
+  background: linear-gradient(-229deg,
+  #fada48, #efefef);
+}
+
+#face{
+  font-size: 20px;
+  padding-left: 10px;
+
+}
+#insta{
+   font-size: 20px;
+   padding-left: 10px;
+   
+}
+
+#web{
+font-size:20px;
+padding-left: 70px;
+}
+
+#cont_t{
+  display: inline;
+  font-size: 15px;
+}
+
+@media(max-width:770px){
+  #pic{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: solid red;
+   margin-left: 30px;
+    box-shadow: 0 5px 10px #ccc;
+    margin-top: 5px;
+  }
+  #nam_e{
+    font-size: 25px;
+    padding-top: 28px;
+  padding-left: 20px;
+  }
+  #web{
+    font-size: 15px ;
+    padding-left: 30px;
+   
+
+
+  }
+  #insta{
+    font-size: 20px;
+    padding-left: 5px;
+    
+    
+ }
+ #face{
+  font-size: 20px;
+  padding-left: 5px;
+ }
+ #cont_t{
+  display: inline;
+  font-size: 11px;
+
+}
+#ant{
+  display: none;
+}
+
+}
+
+
+/*media profile*/
+
+@media(max-width:430px){
+  #pic{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: solid red;
+   margin-left: 10px;
+    box-shadow: 0 5px 10px #ccc;
+    margin-top: 5px;
+  }
+  #branding{
+    font-size: 20px;
+    padding-top: 10px;
+  }
+  #nam_e{
+    font-size: 20px;
+    padding-top: 25px;
+  padding-left: 20px;
+  }
+  #web{
+    font-size: 10px ;
+    padding-left: 20px;
+   
+
+
+  }
+  #insta{
+    font-size: 10px;
+    padding-left: 5px;
+    
+    
+ }
+ #face{
+  font-size: 10px;
+  padding-left: 5px;
+ }
+#face{
+  font-size: 10px;
+  padding-left: 5px;
+
+}
+#cont_t{
+  display: inline;
+  font-size: 7px;
+
+}
+#ant{
+  display: none;
+}
+}
+
+@media(max-width:325px){
+
+  #pic{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: solid red;
+   margin-left: 10px;
+    box-shadow: 0 5px 10px #ccc;
+    margin-top: 10px;
+  }
+
+  #insta{
+    font-size: 10px;
+    padding-left: 5px;
+    
+    
+    
+ }
+ #face{
+  font-size: 10px;
+  padding-left: 5px;
+  
+ }
+
+ #cont_t{
+  display: inline;
+  font-size: 5px;
+
+}
+
+}
+#hove{
+  color:skyblue;
+}
+#hove:hover{
+color: white;
+border-radius: 10px;
+box-shadow: 2px 5px 9px rgb(241, 241, 238);
+transition: 0.3s;
+}
+#serc:hover{
+border-color: solid red;
+} 
+#branding{
+  text-shadow: 2px 1px 2px wheat;
+  
+}
+
+
+
+
+
+
+  
