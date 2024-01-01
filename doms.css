@@ -1,0 +1,41 @@
+body{
+    overflow-y: auto;
+    overflow-x: hidden;
+
+  }
+  *{
+    padding: 0;
+    box-sizing: border-box;
+    
+    scroll-behavior: smooth;
+}
+  #loo_k{
+    margin: auto;
+  }
+
+  
+
+  /*media_qury*/
+  
+  @media (max-width: 430px)
+  {
+    #tog_l{
+      font-size: 15px;
+      color: #ccc;
+    }
+#boo_k{
+    flex-wrap: wrap;
+    width: 100%;
+}
+#book_i{
+    flex-wrap: wrap;
+   width: 100%;
+  }
+#se_r{
+ margin-top: 25px;
+ }
+ #branding{
+    font-size: 20px;
+    padding-top: 10px;
+  }
+}

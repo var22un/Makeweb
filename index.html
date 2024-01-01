@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="indexcss/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Architects Daughter' rel='stylesheet'>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="index.js"></script>
+
+
+
+
+
+<style>
+ 
+  body{
+    font-family: sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    overflow-x: hidden;
+  
+  }
+  @media(max-width:770px)
+  {
+    #fo_img{
+  max-width: 180px;
+  max-height: 180px;
+  margin: auto;
+}
+#sec_d{
+  max-width: 180px;
+  max-height: 180px;
+  margin: auto;
+}
+#t_b{
+  max-height: 130px;
+}
+#t_b_b{
+  max-height: 130px;
+}
+#b_t{
+  max-height: 130px;
+}
+#img{
+  max-height: 350px;
+}
+#tog_l{
+    font-size: 15px;
+    color: #ccc;
+  }
+  }
+  #hove:hover{
+color: white;
+border-radius: 10px;
+box-shadow: 2px 5px 9px rgb(243, 243, 241);
+transition: 0.3s;
+}
+  #bus_t{
+    text-align: center;
+    font-size: 25px;
+    font-family: sans-serif;
+  }
+  #b_t{
+    width: 250px;
+    height: 210px;
+    border: none;
+    background-image: url(images/preview.png);
+    background-size: 100% 100%;
+    border-radius: 10px;
+    box-shadow: 2px 5px 8px #ccc;
+    
+}
+#b_t:hover{
+  width: 255px;
+  height: 205px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+#btn_t:hover{
+  color: black;
+border-radius: 10px;
+box-shadow: 2px 5px 9px rgb(96, 96, 2);
+transition: 0.3s;
+ 
+  background-color: rgb(163, 163, 6);
+  padding: 10px 10px;
+  text-decoration: none; 
+}
+.car2{
+    scroll-snap-align: start;
+    border-radius: 30px;
+    height: 150px;
+    width: 300px;
+   
+   
+    align-items: center;
+    justify-content: center;
+
+   
+    text-align: center;
+}
+/*responsive moble*/
+
+@media(max-width:430px){
+  #tog_l{
+    font-size: 15px;
+    color: #ccc;
+  }
+  #img{
+  max-height: 140px;
+}
+
+  .navbar-brand{
+    font-size: 8px;
+  }
+  .car2{
+    max-width: 200px;
+  max-height: 180px;
+  }
+  #p_r{
+    font-size: 13px;
+  }
+  #m_b_t{
+    flex-wrap: wrap;
+    
+  }
+  #b_t{
+    max-width: 100%px;
+    max-height: 200px;
+  }
+  #l_t{
+    padding-top: 10px;
+  }
+  
+  #m_l{
+    max-width: 500px;
+    text-align: left;
+    max-height: 500px;
+   
+   
+    
+  }
+  #sh_w{
+    display: none;
+  }
+ #i_i{
+  font-size: 10px;
+ }
+ #p_p{
+  font-size: 5px;
+  display: none;
+ }
+  
+  
+  #n_m{
+    font-size: 10px;
+   
+  }
+  #lin_n{
+    max-width: 100%;
+    height: 280px;
+    
+   
+    
+  }
+  #m_K{
+   max-height: fit-content;
+   box-sizing: border-box;
+   max-width: max-content;
+  
+   
+   
+  
+   
+  }
+  #pic{
+    max-width: 200px;
+    max-height: 100px;
+    margin-top:  50px;
+    
+    
+    
+  }
+  
+  #hed_r{
+    max-height: 30px;
+    
+  }
+  #n_v{
+    width: 100%;
+  }
+  #foot_r{
+    flex-wrap: wrap;
+    max-height: 250px;
+  }
+#sec_d{
+  display: none;
+}
+#fo_img{
+  max-width: 180px;
+  max-height: 180px;
+  margin: auto;
+}
+#fot_n{
+  font-size: 5px;
+}
+}
+
+/* search mainu*/
+
+* {
+  box-sizing: border-box;
+}
+
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+
+#myInput{
+  border-radius: 10px;
+  width: 225px;
+  height: 33px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding-left: 10px;
+  background: none;
+  border-bottom-color:solid gray;
+  margin-right: 20px;
+}
+#myInput:hover{
+  border: solid gray;
+  color: whitesmoke;
+  box-shadow: 2px 5px 8px gray;
+  transition: 0.3s;
+  width: 229px;
+  height: 35px;
+  
+  
+}
+#hide_l{
+  width: 140px;
+  height: 35px;
+  
+  padding-left: 15px;
+  padding-top: 5px;
+  background-color: gray;
+  color: black;
+  border-radius: 10px;
+  text-decoration: none;
+}
+#hide_l:hover{
+  border: solid gray;
+  color: whitesmoke;
+  box-shadow: 2px 5px 8px gray;
+  transition: 0.3s;
+}
+#t_b{
+  width: 250px;
+    height: 210px;
+    border: none;
+    background-image: url(images/263e02e428c2e7d838996346bdb5e772.gif);
+    background-size: 100% 100%;
+    border-radius: 10px;
+    box-shadow: 2px 5px 8px #ccc;
+  
+}
+#t_b_b{
+  width: 250px;
+    height: 210px;
+    border: none;
+    background-image: url(images/responsive-gif.gif);
+    background-size: 100% 100%;
+    border-radius: 10px;
+    box-shadow: 2px 5px 8px #ccc;
+  
+}
+#branding{
+    text-shadow: 2px 1px 2px wheat;
+    
+ }
+ ::-webkit-scrollbar{
+ background-color: cadetblue;
+ scroll-behavior: smooth;
+ scroll-snap-type: mandatory;
+ border-radius: 20px;
+ scrollbar-track-color: #f7ef02;
+ color: #f7ef02;
+ width: 10px;
+ }
+#varu::before{
+  content: "varun";
+  animation: change_color infinite 10s;
+color: red;
+font-size: 22px;
+font-family: 'Architects Daughter';;
+
+}
+@keyframes change_color{
+  0% {
+color: #f7ef02;
+  }
+  10%{
+    color: red;
+  }
+  20%{
+    color: goldenrod;
+  }
+  30%{
+    color:purple;
+  }
+  40%{
+    color: rosybrown;
+  }
+  50%{
+    color:brown;
+  }
+  60%{
+    color:orange;
+  }
+  70%{
+    color: red;
+  }
+  80%{
+    color: rgb(9, 100, 32);
+  }
+  90%{
+    color: green;
+  }
+  100%{
+    color:whitesmoke;
+  }
+
+
+
+}
+</style>
+<script>
+  function myFunction() {
+      var input, filter, ul, li, a, i, txtValue;
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      ul = document.getElementById("myUL");
+      li = ul.getElementsByTagName("li");
+      for (i = 0; i < li.length; i++) {
+          a = li[i].getElementsByTagName("a")[0];
+          txtValue = a.textContent || a.innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              li[i].style.display = "";
+          } else {
+              li[i].style.display = "none";
+          }
+      }
+  }
+
+  
+  </script>
+</head>
+<body>
+  <div id="hed_r" class="container-fluid" style="height: 55px; display: none; background-color:grey;  backdrop-filter:blur(25px);">
+    
+    <h1 id="branding" style="font-family: Copperplate, Papyrus, fantasy; font-weight: bold; " class="animate__animated animate__rubberBand">MakeWeb.com</h1>
+
+    <i id="face" class="fa-solid fa-envelope" style="padding-left: 700px; padding-top: 31px;" ></i>
+         <p id="cont_t" style="padding-left:10px; padding-top: 31px;">varun@gmil.com</p>
+          <i  id="face" class="fa-brands fa-facebook " style="padding-left: px; padding-top: 31px;"></i>
+          <p id="cont_t" style="padding-left:10px; padding-top: 31px;">Facebook.com</p> 
+          <i id="insta" class="fa-brands fa-instagram " style="padding-left: px; padding-top: 31px;"></i>
+          <p id="cont_t" style="padding-left:10px; padding-top: 31px;">insta.com</p> 
+       
+</div>
+
+  
+    
+  
+
+    <nav class="navbar navbar-expand-lg " style="background-color: black;  backdrop-filter:blur(25px); width: 100%; height: inherit;">
+      <button style="width: 20px; height: inherit;" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><i id="tog_l" class="fa-solid fa-sliders"></i></span>
+      </button>
+      <a id="" class="navbar-brand" style="font-size: 20px; color: #f7ef02; font-family: sans-serif;">MakeWeb.com</a>
+    
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03" style="margin: auto;">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a id="hove" class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a  id="hove" class="nav-link" href="Tamplets/demos.html">Templets</a>
+          </li>
+          <li class="nav-item active">
+            <a  id="hove" class="nav-link " href="Tamplets/page.html">One Page</a>
+          </li>
+          <li class="nav-item active">
+            <a  id="hove" class="nav-link " href="devloper info/dev.html">Developer Info.</a>
+          </li>
+  
+          <li class="nav-item active">
+            <a id="hove" class="nav-link " href="#foot_r">Contect As</a>
+          </li>
+         
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input type="text" id= "myInput" onkeyup="myFunction()" placeholder="Searcheing..........">
+          <label for="username" title="Kullan adnz girin" data-title="Kullanc ad"></label>
+          <a id="hide_l" href="" style="display: none;">Hide search list</a>
+          
+          
+          
+        </form>
+      </div>
+    
+    </nav>
+    <br>
+    <ul id="myUL" style="float: right; display: none;  ">
+      <li>
+        <a href="Tamplets/page.html">One Page Web</a></li>
+      <li><a href="Tamplets/demos.html">Templets</a></li>
+    
+      <li><a href="Tamplets/demos.html">docter web</a></li>
+      <li><a href="Tamplets/page.html">travel web</a></li>
+    
+      <li><a href="devloper info/dev.html">develper info</a></li>
+      <li><a href="devloper info/dev.html#lin_n">Varun</a></li>
+      <li><a href="#bus_t">Bussines web</a></li>
+      <li><a href="#pr_s">prosnol web</a></li>
+    </ul>
+  
+  
+  
+
+
+
+  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel ">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img id="img" class="d-block w-100" src="images/Responsive-Web-Design.jpeg" alt="First slide" style="height: 500px; box-sizing: border-box;">
+       
+      </div>
+      <div class="carousel-item">
+        <img id="img" class="d-block w-100" src="images/The Difference between Web Designer, Web Developer, and Web Programmer.jpg" alt="Second slide"  style="height: 500px;">
+        
+      </div>
+      <div class="carousel-item">
+        <img id="img" class="d-block w-100" src="images/best-web-development-course-top-training-institute-in-pune.webp" alt="Second slide" style="height: 500px;">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <br>
+
+  
+
+  <br>
+  <div class="container" style="border-radius: 30px;">
+    <h3 style="text-align: center; text-shadow: 0px 1px gray;"> Use Programs<span id="spa"> </span></h3>
+    <hr  style="width: 400px; border: solid 3px blue; border-radius: 20px; box-shadow: 0 5px 7px #ccc;">
+  <br>
+    <div class="conteudo">
+    <div class="carrousel" style="overflow-x: visible;">
+        <article class="car" style=" box-sizing: border-box; overflow: hidden;">
+          <img src="images/ht.jpeg" alt="">
+            <h1></h1>
+        </article>
+        <article class="car">
+         
+          <img src="images/css.png" alt="">
+            <h1></h1>
+        </article>
+        <article class="car">
+          <img src="images/js.png" alt="">
+            <h1></h1>
+        </article>
+        <article class="car">
+          <img src="images/jq.png" alt="">
+            <h1></h1>
+        </article>
+        <article class="car">
+          <img src="images/boost.png" alt="">
+            <h1></h1>
+        </article>
+        <article class="car">
+          <img src="images/pngimg.com - php_PNG35.png" alt="">
+            <h1></h1>
+        </article>
+        
+    </div>
+</div>
+</div>
+  
+ 
+<br>
+
+<div class="container" style="border-radius: 30px; height: 300px; ">
+  <h3 style="text-align: center;">About<span id="abo"></span></h3>
+  <hr   style="width: 400px; position: inherit; border: solid 3px blue; border-radius: 20px; box-shadow: 0 5px 7px #ccc; text-align: center;">
+<br>
+  <div class="conteudo2" style="border-radius: 30px; height: 200px;">
+
+  <div class="carrousel2" style="overflow-x: scroll; height: 200px;">
+      <article class="car2" style="  overflow: hidden; height: 120px;">
+
+        <i class="fa-solid fa-gauge-high" style="font-size: 25px; padding-top: 20px;" ></i>
+        <p  style="font-weight: bold;">Fast
+        <p id="p_r" style="padding:  5px 5px;">fast load times and Leg free
+          Interactions My highest pnonity
+        </p>
+
+      </article>
+
+      <article class="car2" style="  overflow: hidden;  height: 120px;">
+
+        
+        <i class="fa-solid fa-window-restore" style="font-size: 25px; padding-top: 20px;" ></i>
+        <p style="font-weight: bold;">Best UI & UX
+        <p id="p_r" style="padding:  5px 5px;">website have best User-
+          interface & User-Experience
+        </p>
+
+      </article>
+
+      <article class="car2" style="  overflow: hidden;  height: 120px;">
+
+        <i class="fa-solid fa-mobile-screen" style="font-size: 25px; padding-top: 20px;" ></i>
+        <p  style="font-weight: bold;">Responsive
+        <p id="p_r" style="padding:  5px 5px;">My Layout Designs will Work on any
+          device, Big and Small
+        </p>
+      </article>
+
+      <div class="car2" style=" overflow: hidden;  height: 120px;">
+        <i class="fa-solid fa-wrench" style="font-size: 25px; padding-top: 20px;" ></i>
+        <p  style="font-weight: bold;">Dynamic
+        <p id="p_r" style="padding:  5px 5px;">All clints Manage our website easily
+        </p>
+       
+
+      </div>
+      
+      
+  </div>
+</div>
+</div>
+<br>
+<p id="bus_t">Bussines Website Tamplets</p>
+<hr  style="width: 400px; position: inherit; border: solid 3px blue; border-radius: 20px; box-shadow: 0 5px 7px #ccc; text-align: center;">
+<br>
+<div class="container-fluid" style="box-shadow: 2px 5px 8px  gainsboro; background-color: beige;">
+  <div id="m_b_t" class="container" style="display: flex; padding-top: 20px;">
+  <div id="b_t"></div>
+  <div style="width: 800px;">
+  <p id="l_t" style="padding-left: 20px;font-family: sans-serif;text-align: justify;">A business website is a crucial part of any business in the modern world. It is an online platform that represents a company or organization on the internet. It serves as a digital storefront where potential customers can learn about the business, browse products or services, and make purchases.
+    There are many reasons why online business is important. First, it allows you to reach a global audience with your products and services. Second, it gives you the opportunity to build a brand and create a loyal customer base. Third, it provides you with the flexibility to work from anywhere in the world.
+    If any business companies want to compete in this competitive world and business workforce, it must need to have a website. While some businesses may not need a website, having one will almost never hurt. </p>
+    <p style="padding-left: 20px; font-weight: bold; font-family: sans-serif;">Here are some tips for creating a business website:</p>
+    <p style="padding-left: 20px;font-family: sans-serif;">1. Buy a domain name.
+      <p style="padding-left: 20px; font-family: sans-serif;">2. Decide the purpose of your website.
+        <p style="padding-left: 20px; font-family: sans-serif;">3. Find a hosting provider.
+          <p style="padding-left: 20px; font-family: sans-serif;">4. Choose a website builder.
+            <p style="padding-left: 20px; font-family: sans-serif;">5. Plan your site map.
+              <p style="padding-left: 20px; font-family: sans-serif;">6. Add photos and words.
+                <p style="padding-left: 20px; font-family: sans-serif;">7. Promote and monitor</p>
+  </div>
+</div>
+<center><a id="btn_t" href="Tamplets/demos.html" style="font-size: 20px;">Templets</a></center>
+
+</div>
+
+<br>
+<p id="bus_t">Personal Website Tamplets</p>
+<br>
+<div id="pr_s" class="container-fluid">
+
+  <div class="container" style="background-color: beige; border-radius: 20px;">
+  
+  
+  <div id="lin_n" style="width: 100%; height: 250px; display: flex; box-shadow: 2px 5px 8px gainsboro;"> 
+  <img id="pic" style="width: 250px; height: 250px; " src="images/39998-web-development.gif" alt="">
+  <div id="m_l" style="padding-top: 20px; padding-left: 10px;">
+    <p id="n_m" style="  font-size: 20px; font-weight: bold; padding: 0; margin: 0; ">Hi 👋  I Am Varun</p>
+  <p id="n_m" style="padding: 0;margin: 0; font-weight: bold;">Front-end Web Developer</p>
+  
+  <p id="n_m" style="padding: 0;margin: 0; ">I design and develper Responsive web sites and I work with HTML,</p><p id="n_m" style="padding: 0;margin: 0;">CSS3, JavaScript, PHP, Jquery, and bootstrap </p>
+  
+  
+  
+  
+  <div id="sho_w" style="display: flex; ; height: fit-content; width: auto;">
+  <i id="i_i" class="fa-solid fa-envelope" style=" padding-top: 30px; padding-left:10px;" ></i>
+  <p id="p_p" style="padding-left:10px; padding-top: 25px;">varun@gmil.com</p>
+   <i  id="i_i" class="fa-brands fa-facebook" style="padding-top: 30px; padding-left:10px;"></i>
+   <p id="p_p" style="padding-left:10px; padding-top: 25px;">Facebook.com</p> 
+   <i id="i_i" class="fa-brands fa-instagram " style=" padding-top: 30px; padding-left:10px;"></i>
+   <p id="p_p" style="padding-left:10px; padding-top: 25px;">insta.com</p> 
+  </div>
+</div>
+</div>  
+
+<br>
+  <div style="width: 100%">
+  <p style="padding-left: 20px;font-family: sans-serif; font-weight: bold; text-align: justify;">What is a personal website?<p style="text-align: justify;"> A personal website showcases an individual's personal information, achievements, skills, portfolio, and interests online, allowing you to present yourself professionally, share your work, and connect with others.</p>
+    <p style="padding-left: 20px; font-weight: bold; font-family: sans-serif; text-align: justify;">Here are some tips for creating a Personal website:</p>
+    <p style="padding-left: 20px;font-family: sans-serif; text-align: justify;">1. Buy a domain name.
+      <p style="padding-left: 20px; font-family: sans-serif; text-align: justify;">2. Decide the purpose of your website.
+        <p style="padding-left: 20px; font-family: sans-serif; text-align: justify;">3. Find a hosting provider.
+          <p style="padding-left: 20px; font-family: sans-serif; text-align: justify;">4. Choose a website builder.
+            <p style="padding-left: 20px; font-family: sans-serif; text-align: justify;">5. Plan your site map.
+              <p style="padding-left: 20px; font-family: sans-serif; text-align: justify;">6. Add photos and words.
+                <p style="padding-left: 20px; font-family: sans-serif; text-align: justify;">7. Promote and monitor</p>
+  </div>
+</div>
+
+
+</div>
+<br>
+
+<p id="bus_t">UI & UX</p>
+
+
+
+<div class="container-fluid" style="box-shadow: 2px 5px 8px  gainsboro; background-color: beige;">
+  <div id="m_b_t" class="container" style="display: flex; padding-top: 20px;">
+    <div id="t_b"></div>
+  <div style="width: 900px; ">
+  <p id="l_t" style="padding-left: 20px;font-family: sans-serif; font-weight: bold; ">UI stands for "user interface" and UX stands for "user experience".</p> 
+    <p id="l_t" style="padding-left: 20px;font-family: sans-serif; text-align: justify;">UI refers to the way people interact with information systems. It includes the pages, screens, buttons, and other visual elements that users interact with. UI also refers to the touchpoints that people use to engage with a digital product. 
+    UX refers to how a user feels when they interact with a product or service. It includes a person's perceptions of utility, ease of use, and efficiency. UX design is the process of creating products or services that provide meaningful experiences for users. 
+    UI focuses on effectiveness, efficiency, and satisfaction. UX ensures the end-user finds value. A harmonious blend of UX and UI ensures smooth user flows and an appealing interface. 
+    For example, you could have a banking app that looks great and has intuitive navigation (UI). But if the app loads slowly or makes you click through numerous screens to transfer money (UX), it doesn't matter how good it looks. </p>
+    
+  </div>
+  
+</div>
+
+
+</div>
+
+
+
+
+<br>
+
+<p id="bus_t">Responsive Web</p>
+
+
+<div class="container-fluid" style="box-shadow: 2px 5px 8px  gainsboro; background-color: beige;">
+  <div id="m_b_t" class="container" style="display: flex; padding-top: 20px;">
+    
+  <div style="width: 900px; ">
+  <p id="l_t" style="padding-right: 20px;font-family: sans-serif; font-weight: bold;">What does it mean to be responsive?</p> 
+    <p id="l_t" style="padding-right: 20px;font-family: sans-serif;">Responsive web design (RWD) is a web design approach to make web pages render well on all screen sizes and resolutions while ensuring good usability. It is the way to design for a multi-device web. </p>
+    
+  </div>
+  <div id="t_b_b"></div>
+</div>
+
+
+</div>
+<br>
+
+
+<div id="foot_r" class="container-fluid" style="background-color: grey; height: 180px; box-sizing: border-box; display: flex; border-top-right-radius: 20px; border-top-left-radius:20px ;">
+  <img id="fo_img" src="images/1_eqwKZcLyK6NHAqt0E6_Xqg.gif" alt="">
+  <div style="margin: auto;">
+  <div id="sho_w" style=" height: fit-content; width: auto; margin: auto; padding:0px;  text-align: center; ">
+    <p style="text-align: center; margin: 0; padding: 0;">Content us</p>
+   <a href=""> <i id="i_i" class="fa-solid fa-envelope" style=" text-align: center;padding-left: 5; " ></i></a>
+   
+     <a href=""><i  id="i_i" class="fa-brands fa-facebook" style=" padding-left: 5px;"></i></a>
+      
+     <a href=""><i id="i_i" class="fa-brands fa-instagram " style=" padding-left:5px;"></i></a>
+     
+    </div>
+ 
+ 
+  <p id="fot_n" style="font-size: 15px; text-align: center; font-family: 'Sofia'; padding-top: 10px;"> Devloped By : <span id="varu"></span></p></div>
+
+
+<img id="sec_d" src="images/1_eqwKZcLyK6NHAqt0E6_Xqg.gif" alt="">
+</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Templets
+    </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script src="../js/demo.js"></script>
+<link rel="stylesheet" href="css/doms.css">
+
+<style>
+ body{
+    font-family: sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    overflow-x: hidden;
+  
+  }
+  @media (max-width:770px)
+  {
+    #boo_k{
+    overflow-x: scroll;
+    width: 100%;
+  
+}
+#p_p{
+      display: none;
+    }
+    #pic_c{
+      display: none;
+    }
+    #fo_img{
+  max-width: 180px;
+  max-height: 180px;
+  margin: auto;
+}
+#sec_d{
+  max-width: 180px;
+  max-height: 180px;
+  margin: auto;
+}
+#tog_l{
+    font-size: 15px;
+    color: #ccc;
+  }
+#loo_k{
+    margin: auto;
+    padding-left: 15px;
+  }
+
+#se_r{
+ margin-top: 25px;
+ }
+ #branding{
+    font-size: 20px;
+    padding-top: 10px;
+  }
+}
+  
+   /*moblie rs*/
+   @media(max-width:430px)
+  {
+    #hed_r{
+    max-height: 30px;
+    
+  }
+  #tog_l{
+    font-size: 15px;
+    color: #ccc;
+  }
+  #n_v{
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  #foot_r{
+    flex-wrap: wrap;
+    max-height: 250px;
+  }
+#sec_d{
+  display: none;
+}
+#fo_img{
+  max-width: 180px;
+  max-height: 180px;
+  margin: auto;
+}
+#fot_n{
+  font-size: 5px;
+}
+  }
+
+  #am_btn:hover{
+background-color: #065974;
+color: white;
+border-radius: 10px;
+width: 150px;
+height: 40px;
+
+transition: 0.5s;
+box-shadow: 2px 5px 6px  #021e50 ;
+  }
+
+    .form-control{
+        color: black;
+    }
+
+    @media(max-width:375){
+      #brand{
+  font-size: 10px;
+}
+}
+    #hove{
+      color: skyblue;
+    }
+#hove:hover{
+  color: white;
+  border-radius: 10px;
+  box-shadow: 2px 5px 9px rgb(241, 241, 239);
+  transition: 0.3s;
+}
+  #ba_c{
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: scroll;
+  } 
+  #branding{
+    color: yellow;
+  }
+  /* search mainu*/
+
+* {
+  box-sizing: border-box;
+}
+
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+
+#myInput{
+  border-radius: 10px;
+  width: 225px;
+  height: 33px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding-left: 10px;
+  background: none;
+  border-bottom-color:solid gray;
+  margin-right: 20px;
+}
+#myInput:hover{
+  border: solid gray;
+  color: whitesmoke;
+  box-shadow: 2px 5px 8px gray;
+  transition: 0.3s;
+  width: 229px;
+  height: 35px;
+  
+}
+#hide_l{
+  width: 140px;
+  height: 35px;
+  
+  padding-left: 15px;
+  padding-top: 5px;
+  background-color: gray;
+  color: black;
+  border-radius: 10px;
+  text-decoration: none;
+}
+#hide_l:hover{
+  border: solid gray;
+  color: whitesmoke;
+  box-shadow: 2px 5px 8px gray;
+  transition: 0.3s;
+}
+::-webkit-scrollbar{
+ background-color: cadetblue;
+ scroll-behavior: smooth;
+ scroll-snap-type: mandatory;
+ border-radius: 20px;
+ scrollbar-track-color: #f7ef02;
+ color: #f7ef02;
+ width: 10px;
+ }
+#varu::before{
+  content: "varun";
+  animation: change_color infinite 10s;
+color: red;
+font-size: 22px;
+font-family: 'Architects Daughter';;
+
+}
+@keyframes change_color{
+  0% {
+color: #f7ef02;
+  }
+  10%{
+    color: red;
+  }
+  20%{
+    color: goldenrod;
+  }
+  30%{
+    color:purple;
+  }
+  40%{
+    color: rosybrown;
+  }
+  50%{
+    color:brown;
+  }
+  60%{
+    color:orange;
+  }
+  70%{
+    color: red;
+  }
+  80%{
+    color: rgb(9, 100, 32);
+  }
+  90%{
+    color: green;
+  }
+  100%{
+    color:whitesmoke;
+  }
+
+
+
+}
+
+
+</style>
+<script>
+  function myFunction() {
+      var input, filter, ul, li, a, i, txtValue;
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      ul = document.getElementById("myUL");
+      li = ul.getElementsByTagName("li");
+      for (i = 0; i < li.length; i++) {
+          a = li[i].getElementsByTagName("a")[0];
+          txtValue = a.textContent || a.innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              li[i].style.display = "";
+          } else {
+              li[i].style.display = "none";
+          }
+      }
+  }
+
+  $(document).ready(function(){
+    $("#myInput").click(function(){
+        $("#myUL").show(1000);
+    });
+});
+
+$(document).ready(function(){
+    $("#myInput").click(function(){
+        $("#hide_l").show(1000);
+    });
+});
+
+$(document).ready(function(){
+    $("#hide_l").click(function(){
+        $("#myUL").hide(1000);
+    });
+});
+  
+  </script>
+</head>
+<body>
+
+  <div id="hed_r" class="container-fluid" style="height: 55px; display: none; background-color:grey;  backdrop-filter:blur(25px);">
+    
+    <h1 id="branding" style="font-family: Copperplate, Papyrus, fantasy; font-weight: bold; " class="animate__animated animate__rubberBand">MakeWeb.com</h1>
+
+    <i id="face" class="fa-solid fa-envelope" style="padding-left: 700px; padding-top: 31px;" ></i>
+         <p id="cont_t" style="padding-left:10px; padding-top: 31px;">varun@gmil.com</p>
+          <i  id="face" class="fa-brands fa-facebook " style="padding-left: px; padding-top: 31px;"></i>
+          <p id="cont_t" style="padding-left:10px; padding-top: 31px;">Facebook.com</p> 
+          <i id="insta" class="fa-brands fa-instagram " style="padding-left: px; padding-top: 31px;"></i>
+          <p id="cont_t" style="padding-left:10px; padding-top: 31px;">insta.com</p> 
+       
+</div>
+
+  
+    
+  
+
+    <nav class="navbar navbar-expand-lg " style="background-color:black;  backdrop-filter:blur(25px); ">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><i id="tog_l" class="fa-solid fa-sliders"></i></span>
+      </button>
+      <a class="navbar-brand" style="font-size: 20px; color: yellow;">MakeWeb.com</a>
+    
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03" style="margin: auto;">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a id="hove" class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a  id="hove" class="nav-link" href="demos.html">Templets</a>
+          </li>
+          <li class="nav-item active">
+            <a  id="hove" class="nav-link " href="page.html">One Page</a>
+          </li>
+          <li class="nav-item active">
+            <a  id="hove" class="nav-link " href="../devloper info/dev.html">Developer Info.</a>
+          </li>
+  
+          <li class="nav-item active">
+            <a id="hove" class="nav-link " href="#foot_r">Contect As</a>
+          </li>
+         
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input type="text" id= "myInput" onkeyup="myFunction()" placeholder="Searcheing..........">
+         
+          <a id="hide_l" href="" style="display: none;">Hide search list</a>
+        </form>
+      </div>
+    
+    </nav>
+  
+    <ul id="myUL" style="float: right; display: none;">
+      <li>
+        <a href="Tamplets/page.html">One Page Web</a></li>
+      <li><a href="Tamplets/demos.html">Templets</a></li>
+    
+      <li><a href="Tamplets/demos.html">docter web</a></li>
+      <li><a href="Tamplets/page.html">travel web</a></li>
+    
+      <li><a href="../devloper info/dev.html">develper info</a></li>
+      <li><a href="../index.html#bus_t">Bussines web</a></li>
+      <li><a href="../index.html#bus_t">prosnol web</a></li>
+    </ul>
+  
+<br>
+<h3 style="text-align: center; color: blue;">Doctor Website</h3>
+<hr style="width: 400px; border: solid 3px blue; border-radius: 20px; box-shadow: 0 5px 7px #ccc;">
+<br>
+
+<div id="ba_c" style=" height: fit-content; background-color: rgb(184, 242, 223);;">
+  <div>
+    <nav id="nv" class="navbar navbar-expand-lg navbar-light " style=" background-color:rgb(10, 198, 198); backdrop-filter:blur(25px);" >
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a style=" font-size: 30px;" class="navbar-brand"  href="#"><b>HealthyLife.com</b></a>
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a id="hove" class="nav-link " href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a  id="hove" class="nav-link" href="../form and data/apform.php">Online Appointments</a>
+          </li>
+          <li class="nav-item active">
+            <a  id="hove" class="nav-link " href="#tirt">Treatments</a>
+          </li>
+          <li class="nav-item active">
+            <a id="hove" class="nav-link " href="#">Contact us</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input id="hove" style="background: transparent; border:solid black; border-radius: 30px;  color: black;" class="form-control mr-sm-2" type="search" placeholder="Search Your Treatments" aria-label="Search">
+          <button id="hove" class="btn  my-2 my-sm-0" style=" color: black; background: transparent;" type="submit"><i style="font-size: 25px;" class="fa-solid fa-magnifying-glass fa-bounce"></i></button>
+        </form>
+      </div>
+    </nav>
+    <ul id="myUL" style="float: right; display: none;">
+      <li>
+        <a href="Tamplets/page.html">One Page Web</a></li>
+      <li><a href="Tamplets/demos.html">Templets</a></li>
+    
+      <li><a href="Tamplets/demos.html">docter web</a></li>
+      <li><a href="Tamplets/page.html">travel web</a></li>
+    
+      <li><a href="devloper info/dev.html">develper info</a></li>
+      <li><a href="#bus_t">Bussines web</a></li>
+      <li><a href="../index.html#bus_t">prosnol web</a></li>
+    </ul>
+
+  </div>
+ <br>
+ 
+<P style="text-align: center; margin-top: 80px;"><i style="font-size: 30px; color:#e60532 " class="fa-solid fa-heart-pulse fa-beat"></i></P>
+ 
+ <p id="hedi" style="font-size: 35px;  font-family: Sofia, sans-serif; color: black; text-align: center; ">Making health
+ Care Better Together</P> 
+ <br>
+ 
+ <div class="container" style="display: flex;">
+  <marquee behavior="left,right" direction="left">
+ <div class="container" style="display: flex;">
+  <div style="width: 160px; height: fit-content; text-align: center; margin-left: 35px;">
+<div style="width: 150px; height: 111px; border-style: dashed; border: solid darkblue; margin: auto; box-shadow: 2px 5px 8px darkcyan; border-radius: 20px; overflow: hidden; background-image: url(../images/ambulence.png); background-size: 100%;">
+
+</div>
+<p style="font-size: 18px; font-family: sans-serif; margin-top: 10px;">Ambulance Service</p>
+</div>
+
+<div style="width: 160px; height: fit-content; text-align: center; margin-left: 35px;">
+  <div style="width: 150px; height: 111px; border-style: dashed; border: solid darkblue; margin: auto; box-shadow: 2px 5px 8px darkcyan; border-radius: 20px; overflow: hidden; background-image: url(../images/comnication.webp); background-size: 100%;">
+  
+  </div>
+  <p style="font-size: 18px; font-family: sans-serif; margin-top: 10px; ">Good advices</p>
+  </div>
+
+  <div style="width: 160px; height: fit-content; text-align: center; margin-left: 35px;">
+    <div style="width: 150px; height: 111px; border-style: dashed; border: solid darkblue; margin: auto; box-shadow: 2px 5px 8px darkcyan; border-radius: 20px; overflow: hidden; background-image: url(../images/certifide.webp); background-size: 100%;">
+    
+    </div>
+    <p style="font-size: 18px; font-family: sans-serif; margin-top: 10px;">Certified Dr</p>
+    </div>
+
+    <div style="width: 160px; height: fit-content; text-align: center; margin-left: 35px;">
+      <div style="width: 150px; height: 111px; border-style: dashed; border: solid darkblue; margin: auto; box-shadow: 2px 5px 8px darkcyan; border-radius: 20px; overflow: hidden; background-image: url(../images/theripys.webp); background-size: 100%;">
+      
+      </div>
+      <p style="font-size: 18px; font-family: sans-serif; margin-top: 10px; ">Therapies</p>
+      </div>
+
+      <div style="width: 160px; height: fit-content; text-align: center; margin-left: 35px;">
+        <div style="width: 150px; height: 111px; border-style: dashed; border: solid darkblue; margin: auto; box-shadow: 2px 5px 8px darkcyan; border-radius: 20px; overflow: hidden; background-image: url(../images/homecare.webp); background-size: 100%;">
+        
+        </div>
+        <p style="font-size: 18px; font-family: sans-serif; margin-top: 10px; ">Home Visit</p>
+        </div>
+      </div>
+      </marquee>
+</div>
+
+
+<p style="text-align: center; font-size: 28px;  font-family: Sofia, sans-serif; padding: 0; margin: 0;">Treatments
+<hr style="text-align: center; width: 150px; border: solid darkcyan; border-style: dashed; border-radius: 20px;"></p>
+<br>
+<div id="tirt" class="container-fluid" style="height: fit-content;">
+
+  <div id="boo_k" class="container" style="display: flex;">
+    <div id="loo_k" style="width: 225; height: fit-content; ">
+    <div id="se_r" style="width: 220px; height:200px; text-align: center;  border-radius: 20px; background-color: rgba(127, 255, 212, 0.489); box-shadow: 2px 6px 9px skyblue;"><i  class="fa-solid fa-heart-pulse" style="color: #e60532; margin-top: 10px; font-size: 23px;"></i>
+      <b><p style="font-size: 20px; margin: 0; padding: 0;">Cardiology</p></b>
+      <p style="font-size: 14px; padding:5px 5px">Cardiologists diagnose, assess and treat patients with defects and diseases of the heart and the blood vessels, which are known as the cardiovascular system.</p>
+      </div>
+      <center>
+        <a style="margin-top: 20px; width: 150px; height: 40px; border-radius: 20px;  border: solid rgb(162, 247, 162);"  id="am_btn" class="nav-link" href="#">Book Now</a>
+      </center>
+    </div>
+    <div  id="loo_k" style="width: 225; height: fit-content;">
+      <div id="se_r" style="width: 220px; height:200px; text-align: center;  border-radius: 20px; background-color: rgba(127, 255, 212, 0.489); box-shadow: 2px 6px 9px skyblue;"><i class="fa-solid fa-user-doctor" style="color: #065565;  margin-top: 10px; font-size: 23px;"></i>
+        <b><p style="font-size: 20px; margin: 0; padding: 0;">Monthly Check up</p></b>
+        <p style="font-size: 14px; padding:5px 5px">Take your car or minivan to the garage for a thorough checkup. Travel Holiday. especially : a periodic medical or dental examination.</p>
+        </div>
+        <center>
+          <a style="margin-top: 20px; width: 150px; height: 40px; border-radius: 20px;  border: solid rgb(162, 247, 162);"  id="am_btn" class="nav-link" href="#">Book Now</a>
+        </center>
+  </div>
+  <div  id="loo_k" style="width: 225; height: fit-content; ">
+        <div id="se_r" style="width: 220px; height:200px; text-align: center;  border-radius: 20px; background-color: rgba(127, 255, 212, 0.489); box-shadow: 2px 6px 9px skyblue;"><i class="fa-solid fa-hand-dots" style="color: #06667f; margin-top: 10px; font-size: 23px;"></i>
+          <b><p style="font-size: 20px; margin: 0; padding: 0;">Skin Care</p></b>
+          <p style="font-size: 14px; padding:5px 5px">Skin care is a range of practices that can help improve the appearance and integrity of the skin, and relieve skin conditions. </p>
+          </div>
+          <center>
+            <a style="margin-top: 20px; width: 150px; height: 40px; border-radius: 20px;  border: solid rgb(162, 247, 162);"  id="am_btn" class="nav-link" href="#">Book Now</a>
+          </center>
+  </div>
+  <div  id="loo_k" style="width: 225; height: fit-content; ">
+          <div id="se_r" style="width: 220px; height:200px; text-align: center;  border-radius: 20px; background-color: rgba(127, 255, 212, 0.489); box-shadow: 2px 6px 9px skyblue;"><i class="fa-solid fa-eye" style="color: #035768; margin-top: 10px; font-size: 23px;"></i>
+            <b><p style="font-size: 20px; margin: 0; padding: 0;">Opthalmology</p></b>
+            <p style="font-size: 14px; padding:5px 5px">Ophthalmology is the specialized field of medicine that focuses on the health of the eye. It includes the anatomy, physiology and diseases that may affect the eye. </p>
+            </div>
+            <center>
+              <a style="margin-top: 20px; width: 150px; height: 40px; border-radius: 20px;  border: solid rgb(162, 247, 162);"  id="am_btn" class="nav-link" href="#">Book Now</a>
+            </center>  
+  </div>
+
+  </div>
+
+</div>
+<br>
+<p style="text-align: center; font-size: 30px; font-family: Sofia, sans-serif; padding: 0; margin: 0;">Services</p>
+  <hr style="text-align: center; width: 150px; border: solid darkcyan; border-style: dashed; border-radius: 20px;">
+  <br>
+  <div class="container-fluid" style="height: fit-content">
+
+    <div id="book_i" class="container" style="display: flex;">
+      <div id="loo_k">
+      <div id="se_r" style="width: 220px; height:200px; text-align: center;   border-top-right-radius: 30px; border-bottom-left-radius: 30px; background-color: rgba(127, 255, 212, 0.489); box-shadow: 2px 6px 9px skyblue;"><i class="fa-solid fa-calendar-check" style="color: #065974;margin-top: 10px; font-size: 23px;"></i>
+        <b><p style="font-size: 20px; margin: 0; padding: 0;">Appointment</p></b>
+        <p style="font-size: 14px; padding:5px 5px">choose Your Treatment And Book Appointment.</p>
+       <center>
+          <a  id="am_btn" class="nav-link" href="#">Book Now</a>
+        </center>
+        </div>
+      </div>
+
+      <div id="loo_k">
+        <div id="se_r" style="width: 220px; height:200px; text-align: center;   border-top-right-radius: 30px; border-bottom-left-radius: 30px; background-color: rgba(127, 255, 212, 0.489); box-shadow: 2px 6px 9px skyblue;"><i class="fa-solid fa-truck-medical" style="color: #02245f; margin-top: 10px; font-size: 23px;"></i>
+          <b><p style="font-size: 20px; margin: 0; padding: 0;">Emergency Cases</p></b>
+          
+          <p style="font-size: 14px; padding:5px 5px" >Emergency Cases 24 Hour. Heart attack, Bleeding, Breathlessness</p>
+          <center>
+          <a  id="am_btn" class="nav-link" href="#" >Call Now</a>
+          </center>
+          </div>
+      </div>
+      <div id="loo_k">
+          <div id="se_r" style="width: 220px; height:200px; text-align: center;  border-top-right-radius: 30px; border-bottom-left-radius: 30px; background-color: rgba(127, 255, 212, 0.489); box-shadow: 2px 6px 9px skyblue;"><i class="fa-solid fa-business-time" style="color: #021e50;  margin-top: 10px; font-size: 23px;"></i>
+            <b><p style="font-size: 20px; margin: 0; padding: 0;">Opening Hour</p></b>
+            <b> <div style="display: flex; margin: auto;width: 200px; height: 30px; border-bottom: solid black;">
+            <p style="font-size: 13px;  font-family: sans-serif; padding:5px 5px; ">Mon-Fri:</p>
+            <p style="font-size: 13px;  font-family: sans-serif; padding:5px 5px; padding-left: 50px;"> 9:00 - 10:00</p>
+            
+          </div>
+          
+          <div style="display: flex; margin: auto;width: 200px; height: 30px;  border-bottom: solid black;">
+            <p style="font-size: 13px;  font-family: sans-serif; padding:5px 5px; ">Saturday:</p>
+            <p style="font-size: 13px;  font-family: sans-serif; padding:5px 5px; padding-left: 45px;">9:30 - 9:00</p>
+          </div>
+          <div style="display: flex; margin: auto;width: 200px; height: 30px;  border-bottom: solid black;">
+            <p style="font-size: 13px; font-family: sans-serif; padding:5px 5px; ">Sunday:</p>
+            <p style="font-size: 13px; font-family: sans-serif; padding:5px 5px; padding-left: 50px;">10:00 - 8:00</p>
+          </div></b>
+            </div>
+      </div>
+            
+           
+  
+    </div>
+  
+  </div>
+  
+  <br>
+
+
+<div id="foot_r" class="container-fluid" style="background-color: grey; height: 180px; box-sizing: border-box; display: flex;">
+  <img id="fo_img" src="../images/1_eqwKZcLyK6NHAqt0E6_Xqg.gif" alt="">
+  <div style="margin: auto;">
+  <div id="sho_w" style=" height: fit-content; width: auto; margin: auto;  text-align: center; ">
+    <p style="text-align: center; margin: 0; padding: 0;">Content us</p>
+   <a href=""> <i id="i_i" class="fa-solid fa-envelope" style=" text-align: center;padding-left: 5; " ></i></a>
+   
+     <a href=""><i  id="i_i" class="fa-brands fa-facebook" style=" padding-left: 5px;"></i></a>
+      
+     <a href=""><i id="i_i" class="fa-brands fa-instagram " style=" padding-left:5px;"></i></a>
+     
+    </div>
+ 
+  <p id="fot_n" style="font-size: 20px; text-align: center; font-family: 'Sofia'; padding-top: 10px;"> Devloped By : <span id="varu"></span></p></div>
+
+
+<img id="sec_d" src="../images/1_eqwKZcLyK6NHAqt0E6_Xqg.gif" alt="">
+
+</div>
+  
+
+   
+    
+</script>
+</html>
